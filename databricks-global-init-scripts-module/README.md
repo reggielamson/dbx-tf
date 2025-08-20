@@ -40,7 +40,7 @@ file_content = "#!/bin/bash\necho 'Hello from DBFS'"
 
 ```hcl
 module "databricks_init_scripts" {
-  source = "./modules/databricks-global-init-scripts"
+  source = "../databricks-global-init-scripts-modules"
 
   init_scripts = {
     "install-packages" = {
@@ -73,7 +73,7 @@ module "databricks_init_scripts" {
 
 ```hcl
 module "databricks_init_scripts" {
-  source = "./modules/databricks-global-init-scripts"
+  source = "../databricks-global-init-scripts-modules"
 
   init_scripts = {
     "security-setup" = {
@@ -97,7 +97,7 @@ module "databricks_init_scripts" {
 
 ```hcl
 module "databricks_init_scripts" {
-  source = "./modules/databricks-global-init-scripts"
+  source = "../databricks-global-init-scripts-modules"
 
   init_scripts = {
     "custom-driver-setup" = {
@@ -129,7 +129,7 @@ module "databricks_init_scripts" {
 
 ```hcl
 module "databricks_init_scripts" {
-  source = "./modules/databricks-global-init-scripts"
+  source = "../databricks-global-init-scripts-modules"
 
   init_scripts = {
     # Direct content
@@ -187,7 +187,7 @@ module "databricks_init_scripts" {
 
 ```hcl
 module "databricks_init_scripts" {
-  source = "./modules/databricks-global-init-scripts"
+  source = "../databricks-global-init-scripts-modules"
 
   init_scripts = {
     "environment-setup" = {
@@ -226,7 +226,7 @@ module "databricks_init_scripts" {
 
 ```hcl
 module "databricks_init_scripts" {
-  source = "./modules/databricks-global-init-scripts"
+  source = "../databricks-global-init-scripts-modules"
 
   init_scripts = {
     # System-level setup (runs first)
