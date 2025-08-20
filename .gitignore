@@ -206,4 +206,33 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-.terraform/*
+# Local .terraform directories
+**/.terraform/
+
+# Terraform state files and backups
+*.tfstate
+*.tfstate.*
+
+# Terraform crash log files
+crash.log
+crash.*.log
+
+# Terraform variable files (potentially sensitive)
+*.tfvars
+*.tfvars.json
+
+# Terraform override files (often for local development)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan output files
+*.tfplan*
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# macOS specific files (if applicable)
+.DS_Store
